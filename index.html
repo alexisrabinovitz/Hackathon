@@ -6,47 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Quicksand:400,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
-      <h1>Scrambled Words</h1>
-      <div id="contact">
-        <a target="_blank" href="https://github.com/IAmAlexJohnson"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a target="_blank" href="https://codepen.io/IAmAlexJohnson/"
-          ><i class="fab fa-codepen"></i
-        ></a>
-        <a target="_blank" href="https://twitter.com/IAmAlexJohnson"
-          ><i class="fab fa-twitter"></i
-        ></a>
-      </div>
+      <h1>Unscramble</h1>
+
       <div id="rules">
-        <p class="lead">Unscamble the words.</p>
-        <p>Type in your guess <small>(Enter works)</small>.</p>
-        <p>Get three correct and level up.</p>
-        <p>Get a word wrong three times and restart.</p>
-        <p>Finish level 8 and you win.</p>
-        <p>Good luck!</p>
-        <button id="play-btn">Let's Play</button>
+        <p class="lead">Descifra la palabra.</p>
+        <p>Escribe tu respuesta.</p>
+        <p>Si adivinas tres palabras correctamente avanzas un nivel.</p>
+        <p>Si obtienes tres palabras incorrectas el se termina el juego.</p>
+        <p>¡Si terminas el nivel 8 ganas!</p>
+        <p>¡Buena suerte!</p>
+        <button id="play-btn">¡A jugar!</button>
       </div>
     </nav>
+    <div class="content">
+      <div id="game-container" class="hidden">
+        <p>Nivel: <span id="level">1</span></p>
+        <p>Puntaje: <span id="score">0</span></p>
+        <p>Intentos: <span id="attempts">0</span></p>
+        <p id="info"></p>
 
-    <div id="game-container" class="hidden">
-      <p>Level: <span id="level">1</span></p>
-      <p>Score: <span id="score">0</span></p>
-      <p>Attempts: <span id="attempts">0</span></p>
-      <p id="info"></p>
+        <div id="guess-container">
+          <p id="scrambled-word"></p>
 
-      <div id="guess-container">
-        <p id="scrambled-word"></p>
-
-        <input id="user-guess" type="text" placeholder="Enter your guess" />
-        <button id="submit">Submit</button>
-        <button id="reset-btn">Reset</button>
+          <input
+            id="user-guess"
+            type="text"
+            placeholder="Introduce tu respuesta"
+          />
+          <button id="submit">Enviar</button>
+          <button id="reset-btn">Reiniciar</button>
+        </div>
       </div>
     </div>
-
     <script src="./game.js"></script>
   </body>
 </html>
