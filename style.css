@@ -163,6 +163,7 @@ small {
 .correct {
   color: green;
   display: block;
+  font-weight: 600;
 }
 
 .incorrect {
