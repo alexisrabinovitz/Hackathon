@@ -1,0 +1,17 @@
+<!-- Este código es un juego de adivinanza de palabras en JavaScript. El juego consiste en mostrar una palabra barajeada en la pantalla y el jugador debe adivinar la palabra original. Si la respuesta es correcta, el jugador gana un punto, se muestra el mensaje "CORRECTO" y se muestra una nueva palabra barajeada en la pantalla. Si la respuesta es incorrecta, el jugador pierde un punto y se muestra el mensaje "¡Incorrecto!". Si el jugador no adivina la palabra se suman intentos fallidos, al momento de adivinar la palabra se resetea el tablero de intentos fallidos a cero. 
+
+El juego utiliza elementos del DOM (Document Object Model) para interactuar con el usuario y mostrar información. Estos elementos se obtienen mediante el uso del método getElementById() y se asignan a variables. Por ejemplo, userGuess es el elemento de entrada de texto donde el usuario escribe su respuesta, usersWord es el elemento donde se muestra la palabra desordenada y scoreOutput es el elemento donde se muestra la puntuación del usuario.
+
+A continuación, se definen las palabras para cada nivel del juego. Cada nivel tiene su propia matriz de palabras. Los niveles van desde el nivel uno, que tiene palabras más fáciles, hasta el nivel ocho, que tiene palabras más difíciles. Cada nivel se representa como una matriz de palabras, donde cada palabra es una cadena de caracteres.
+
+El código también define algunas variables de estado para el juego, como el nivel actual, la puntuación, el número de intentos fallidos y la palabra actual. Estas variables se inicializan en cero o en un valor predeterminado utilizando la sintaxis let <variable> = <valor>.
+
+Después, el código define varias funciones que se utilizan en el juego. La función reset() restablece las variables del estado del juego a sus valores iniciales y actualiza la pantalla. La función randomWord() toma una matriz de palabras como argumento y devuelve una palabra aleatoria de la matriz. La función scrambleWord() toma una palabra como argumento y devuelve una versión barajeada de la palabra.
+
+La función updateBoard() actualiza la pantalla con la información actual del juego, como la puntuación, el nivel y el número de intentos restantes. La función checkAnswer() comprueba si la respuesta del jugador es correcta o incorrecta y actualiza la pantalla en consecuencia. La función setLevel() establece la palabra actual del juego en función del nivel actual.
+
+Finalmente, el código agrega varios eventos al juego. Cuando el jugador hace clic en el botón "Jugar", se muestra el juego y se ocultan las reglas. Cuando el jugador hace clic en el botón "Enviar", se llama a la función checkAnswer() con la respuesta del jugador como argumento. Cuando el jugador presiona la tecla "Enter", también se llama a la función checkAnswer(). Cuando el jugador hace clic en el botón "Reiniciar", se llama a la función reset() para reiniciar el juego.
+
+La función setLevel() selecciona una palabra al azar de la lista de palabras correspondiente al nivel actual y la muestra al usuario como una palabra mezclada.
+
+Finalmente, el código agrega event listeners a los botones de envío, reiniciar y tecla Enter. Cuando el usuario hace clic en el botón de envío o presiona Enter, la función checkAnswer() se llama para verificar la respuesta del usuario. Cuando el usuario hace clic en el botón de reiniciar, la función reset() se llama para reiniciar el juego a su estado inicial. -->

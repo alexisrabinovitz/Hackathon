@@ -19,7 +19,10 @@
         <p class="lead">Descifra la palabra.</p>
         <p>Escribe tu respuesta.</p>
         <p>Si adivinas tres palabras correctamente avanzas un nivel.</p>
-        <p>Si obtienes tres palabras incorrectas el se termina el juego.</p>
+        <p>
+          Cada intento fallido es un punto menos. Y cada acierto se reinician
+          los intentos fallidos.
+        </p>
         <p>¡Cuando termines el nivel 8 ganas!</p>
         <p>¡Buena suerte!</p>
         <button id="play-btn">¡A jugar!</button>
@@ -29,7 +32,7 @@
       <div id="game-container" class="hidden">
         <p>Nivel: <span id="level">1</span></p>
         <p>Puntaje: <span id="score">0</span></p>
-        <p>Intentos: <span id="attempts">0</span></p>
+        <p>Intentos Fallidos: <span id="attempts">0</span></p>
         <p id="info"></p>
 
         <div id="guess-container">
