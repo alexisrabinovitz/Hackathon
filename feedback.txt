@@ -3,3 +3,7 @@ Aumentar a nivel 10. Al finalizar el juego "Ganaste! Excelente trabajo, Puedes v
 Mantener intentos fallidos de forma global. Generar sistema definiendo un límite de intentos.
 
 'keyCode' es obsoleto cambiar por alternativa. 
+
+La lógica del juego y la interfaz de usuario están bien organizadas y estructuradas. 
+
+El código también sigue las mejores prácticas y tiene un buen nivel de legibilidad. Sin embargo, existen algunos problemas menores con el formato del código, como el uso incoherente de punto y coma y la sangría.
