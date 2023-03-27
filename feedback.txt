@@ -1,2 +1,5 @@
 Aumentar a nivel 10. Al finalizar el juego "Ganaste! Excelente trabajo, Puedes volver a emepzar el juego" corregir "emepzar" por empezar.
+
 Mantener intentos fallidos de forma global. Generar sistema definiendo un límite de intentos.
+
+'keyCode' es obsoleto cambiar por alternativa. 
